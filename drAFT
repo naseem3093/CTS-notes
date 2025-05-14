@@ -13,3 +13,192 @@ Core Java Important Concepts For Interim Evaluation
 12.Spring core,spring jpa,spring jdbc,spring AOP,spring MVC,Spring boot
 13.Microservices (Config server,eureka server,api gate way(security JWT),Hystrix)
 14.GIT Basic commands
+
+
+Great, Naseem! Based on the topics you’ve shared, I’ve broken them down into possible interview questions with ideal sample answers. These are designed from an interviewer’s perspective, keeping your intern-level exposure in mind. Let’s go topic by topic.
+
+⸻
+
+1. Object Class & Its Methods
+
+Q1. Why is the Object class important in Java?
+A: The Object class is the root of the class hierarchy. Every class in Java inherits from it either directly or indirectly. It provides common methods like toString(), equals(), and hashCode().
+
+Q2. What does toString() do?
+A: It returns a string representation of the object. We can override it to give meaningful output.
+
+Q3. What is equals() used for?
+A: It checks if two objects are logically equal. The default method checks reference, but we can override it to compare values.
+
+Q4. Why override hashCode() with equals()?
+A: To maintain the contract: if two objects are equal using equals(), they must have the same hashCode() — especially important for HashMap.
+
+⸻
+
+2. OOPs Concepts
+
+Q1. Explain inheritance with an example.
+A: Inheritance allows one class to inherit fields and methods from another. For example, class Car extends Vehicle.
+
+Q2. What is the difference between method overloading and overriding?
+A: Overloading means same method name with different parameters in the same class. Overriding means redefining a method in a subclass.
+
+Q3. What is polymorphism?
+A: It means many forms. Java supports compile-time (overloading) and runtime (overriding) polymorphism.
+
+Q4. What is encapsulation?
+A: Wrapping data and code in a single unit using private variables and public getters/setters.
+
+⸻
+
+3. Class, Object, Interface, Abstract Class
+
+Q1. Difference between class and object?
+A: A class is a blueprint. An object is an instance of that blueprint.
+
+Q2. What is an interface in Java?
+A: It’s a contract with abstract methods. A class implements it to define behavior.
+
+Q3. Difference between abstract class and interface?
+A: Abstract class can have both abstract and concrete methods, whereas interface (before Java 8) can only have abstract methods.
+
+⸻
+
+4. String, StringBuffer, StringBuilder
+
+Q1. Difference between String, StringBuffer, and StringBuilder?
+A: String is immutable. StringBuffer is mutable and thread-safe. StringBuilder is mutable but not thread-safe (faster in single-threaded context).
+
+⸻
+
+5. Exception Handling
+
+Q1. What is the difference between checked and unchecked exceptions?
+A: Checked exceptions must be handled (e.g., IOException), unchecked exceptions occur at runtime (e.g., NullPointerException).
+
+Q2. Why use finally block?
+A: It runs regardless of exception — good for closing resources.
+
+⸻
+
+6. Multithreading
+
+Q1. How to create threads in Java?
+A: By extending Thread or implementing Runnable.
+
+Q2. What is synchronization?
+A: It controls access to shared resources to prevent conflicts.
+
+Q3. What are wait(), notify(), and notifyAll()?
+A: Methods for thread communication; used in synchronized blocks to manage execution.
+
+⸻
+
+7. Collections Framework
+
+Q1. Difference between List, Set, and Map?
+A: List allows duplicates and preserves order. Set doesn’t allow duplicates. Map stores key-value pairs.
+
+Q2. What are concurrent collections?
+A: Collections designed for multithreading (e.g., ConcurrentHashMap).
+
+⸻
+
+8. Java 8 Features
+
+Q1. What is a functional interface?
+A: An interface with one abstract method (e.g., Runnable).
+
+Q2. What is a lambda expression?
+A: A short form of anonymous functions. Example: (a, b) -> a + b
+
+Q3. What does the :: operator do?
+A: Method reference. Example: System.out::println
+
+Q4. What is the Stream API used for?
+A: Processing collections in a functional way.
+
+⸻
+
+9. MySQL Queries
+
+Q1. How to fetch all records from a table?
+A: SELECT * FROM table_name;
+
+Q2. What are joins?
+A: They combine rows from two or more tables. Example: INNER JOIN, LEFT JOIN.
+
+Q3. What is a subquery?
+A: A query within another query.
+
+⸻
+
+10. JDBC
+
+Q1. What is JDBC?
+A: Java API to connect and execute queries with databases.
+
+Q2. Steps in JDBC connection?
+A: Load driver → Establish connection → Create statement → Execute query → Close connection.
+
+⸻
+
+11. JPA with Hibernate
+
+Q1. What is JPA?
+A: Java Persistence API for ORM. Hibernate is one implementation.
+
+Q2. Common JPA annotations?
+A: @Entity, @Table, @Id, @GeneratedValue, @OneToMany, @ManyToOne.
+
+Q3. Difference between JPA and Hibernate?
+A: JPA is a specification, Hibernate is an implementation.
+
+⸻
+
+12. Spring Framework
+
+Q1. What is Spring Core?
+A: It provides Dependency Injection (DI) and Inversion of Control (IoC).
+
+Q2. What is Spring Boot?
+A: A framework that simplifies Spring setup with auto-configuration.
+
+Q3. What is AOP?
+A: Aspect-Oriented Programming — adds behavior to code without modifying it (e.g., logging).
+
+Q4. Spring Data JPA vs JDBC?
+A: JPA handles ORM with objects. JDBC deals with SQL directly.
+
+⸻
+
+13. Microservices
+
+Q1. What is a Config Server?
+A: Central place to manage application properties across services.
+
+Q2. What is Eureka?
+A: A service registry for locating microservices.
+
+Q3. What is an API Gateway?
+A: It routes client requests to appropriate services; integrates JWT for security.
+
+Q4. What is Hystrix?
+A: A fault-tolerance library that prevents cascading failures using circuit breaker patterns.
+
+⸻
+
+14. Git Basics
+
+Q1. How to initialize a Git repo?
+A: git init
+
+Q2. How to stage and commit changes?
+A: git add . and git commit -m "message"
+
+Q3. How to push to remote?
+A: git push origin branch_name
+
+⸻
+
+Would you like me to prepare this as a PDF notes sheet or flashcard format for easy revision? Or do you want to go through mock questions from each topic?
